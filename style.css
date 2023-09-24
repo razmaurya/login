@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Signika+Negative:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Signika Negative', sans-serif;
+}
+.login-page {
+    background: linear-gradient(90deg, rgba(141, 194, 111, 1) 0%, rgba(118, 184, 82, 1) 50%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+        max-width: 360px;
+            padding: 45px;
+    background: #FFFFFF;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    margin: auto;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-form {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+}
+
+input {
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    font-size: 14px;
+}
+input::placeholder{
+    color: #b2afaf;
+}
+input[type="button"]{
+background: #00B241;
+color: #fff;
+font-size:15px ;
+letter-spacing: .5px;
+}
+.message{
+    margin: 5px 0 0;
+        color: #b3b3b3;
+        font-size: 15px;
+}
+.message a{
+        color: #4CAF50;
+            text-decoration: none;
+}
+
+
+.error{
+    position: relative;
+    animation: shake .1s linear infinite;
+    animation-iteration-count: 4;
+
+}
+
+@keyframes shake {
+    0% {
+        left: -5px;
+    }
+
+    100% {
+        right: -5px;
+    }
+}
+@media(max-width:375px) {
+.register-form{
+  width: 235px !important; 
+}
+.form{
+    padding: 31px;
+}
+}

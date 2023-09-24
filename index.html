@@ -1,1 +1,29 @@
-<h1>dfhjksdfhks</h1>h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="form" id="errorb">
+            <form class="register-form" method="POST">
+                <p id="error" style="color:rgb(255, 0, 0); font-weight: bold;"></p>
+                <input  type="text" id="email" name="email" placeholder="Email"/>
+                <input type="hidden" id="otp" name="otp" placeholder="OTP"/>
+                <input type="hidden" id="pass" name="password" placeholder="Password"/>
+                <input type="button" name="submit" id="submit" value="Send OTP">
+                <input type="hidden" name="varify" id="verify" value="Verify">
+                <input type="hidden" name="login" id="login" value="Login">
+                <p class="message">Already registered? <a href="#">Sign In</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
